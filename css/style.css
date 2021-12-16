@@ -1,0 +1,108 @@
+/* GENERAL */
+body, body>div {
+    min-height: 100vh;
+}
+body>div {
+    max-width: 70%;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* HEADER - FOOTER */
+header, footer, .logo, .footer-nav, header ul, footer ul {
+    display: flex;
+}
+.logo {
+    flex-direction: column;
+    justify-content: center;
+}
+.logo img, header {
+    max-height: 2.5rem;
+}
+header ul {
+    margin: 0.6rem auto;
+}
+header ul, footer ul {
+    list-style-type: none;
+}
+header li {
+    padding: 0 1rem;
+    border-right: 1px solid black;
+}
+.header-nav ul {
+    padding-left: 0;
+}
+.login-nav ul {
+    margin-right: 0;
+}
+.login-nav, .login-nav ul {
+    flex-grow: 2;
+    justify-content: flex-end;
+}
+.header-nav li:last-of-type, .login-nav li:last-of-type {
+    border-right: none;
+}
+.login-nav li:last-of-type {
+    padding-right: 0;
+}
+footer {
+    margin-top: auto;
+    border-top: 1px solid red;
+}
+footer, footer ul {
+    flex-direction: column;
+    margin-bottom: 0;
+}
+footer ul:first-of-type {
+    padding-left: 0;
+}
+footer li {
+    margin: 0.5rem 0;
+}
+footer p {
+    margin: 0 auto;
+    align-self: center;
+}
+
+/* ----- MAIN ----- */
+main {
+    margin-bottom: 4rem;
+}
+a {
+    color: black;
+}
+a:hover {
+    color: red;
+}
+
+/* MOBILE */
+@media screen and (max-device-width: 800px) {
+    
+    body>div {
+        max-width: initial;
+    }
+    .logo {
+        width: 20%;
+        height: auto;
+    }
+    .login-nav ul {
+        padding-left: 5%;
+    }
+    header li {
+        padding: 0 0.5rem;
+    }
+    header a, footer a {
+        font-size: 0.8rem;
+    }
+    main {
+        margin-bottom: 1rem;
+    }
+    footer ul {
+        margin-top: 0;
+    }
+
+}

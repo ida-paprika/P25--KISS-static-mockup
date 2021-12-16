@@ -1,0 +1,35 @@
+
+#jobs-page h2 {
+    margin-bottom: 0;
+}
+
+.search-section form, .search-section form div {
+    display: flex;
+    justify-content: space-between;
+}
+
+.search-section form>div {
+    flex-direction: column;
+    flex-basis: 35%;
+}
+
+.search-section form>div:last-of-type {
+    flex-basis: 27%;
+}
+
+.search-section form select, .search-section form input {
+    width: 100%;
+    background-color: white;
+    border: 2px solid black;
+}
+
+
+@media screen and (max-device-width: 800px) {
+    .search-section form {
+        flex-direction: column;
+    }
+
+    .search-section form select {
+        margin-bottom: 1rem;
+    }
+}

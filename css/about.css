@@ -1,0 +1,43 @@
+#about-page h1 {
+    margin: 1rem auto 0.5rem auto;
+}
+
+#about-page article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#about-page article h2 {
+    margin: 0.5rem auto;
+    flex-basis: 100%;
+}
+.article-image {
+    flex-basis: 40%;
+}
+#about-page article img {
+    max-width: 100%;
+}
+.article-text {
+    flex-basis: 58%;
+}
+#about-page article p:first-of-type {
+    margin-top: 0;
+}
+.workplace-article {
+    margin-top: 1rem;
+    flex-direction: row-reverse;
+}
+
+@media screen and (max-device-width: 800px) {
+
+    #about-page article {
+        flex-direction: column;
+    }
+    #about-page article h2 {
+        margin-bottom: 0;
+    }
+    .article-image img {
+        flex-basis: 100%;
+        margin: 0;
+    }
+}
