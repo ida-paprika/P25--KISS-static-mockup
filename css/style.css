@@ -75,9 +75,10 @@ main {
 a {
     color: black;
 }
-a:hover {
+a:hover, i {
     color: red;
 }
+
 
 /* MOBILE */
 @media screen and (max-device-width: 800px) {
